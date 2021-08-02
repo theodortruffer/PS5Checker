@@ -1,0 +1,9 @@
+#!/bin/bash
+TELEGRAM_CONF="
+[telegram]
+token = ${TELEGRAM_TOKEN}
+chat_id = ${TELEGRAM_CHAT_ID}
+"
+
+echo "${TELEGRAM_CONF}" > /opt/app/telegram.conf
+exec "$@"
