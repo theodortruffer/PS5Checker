@@ -1,2 +1,2 @@
-*/5 * * * * /usr/local/bin/python /opt/app/check-ps5.py > /proc/1/fd/1 2>/proc/1/fd/2
-0 12 * * * /usr/local/bin/python /opt/app/check-ps5.py --force-notification > /proc/1/fd/1 2>/proc/1/fd/2
+*/5 * * * * /usr/local/bin/python /opt/app/check-ps5.py >> /var/log/cron.log 2>&1
+0 12 * * * /usr/local/bin/python /opt/app/check-ps5.py --force-notification >> /var/log/cron.log 2>&1
